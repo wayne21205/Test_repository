@@ -1,10 +1,11 @@
 package test_2014_8_29;
 
-public enum Wood {
+public enum WoodEnum {
 	
 	  INDIAN_ROSEWOOD, BRAZILIAN_ROSEWOOD, MAHOGANY, MAPLE,
 	  COCOBOLO, CEDAR, ADIRONDACK, ALDER, SITKA;
 	  
+	  @Override
 	  public String toString() {
 	    switch(this) {
 	      case INDIAN_ROSEWOOD:    return "Indian Rosewood";

@@ -4,13 +4,18 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public enum NetworkProtocol {
+public enum NetProtocolEnum {
+	
 	TCP("Transmission Control Protocol"),
 	UDP("User Datagram Protocol");
 	
+	/*
+	 *  The description type in Enum (This case, I use the type of String ) 
+	 */
 	private String description;
 
-	private NetworkProtocol(String description) {
+	
+	private NetProtocolEnum(String description) {
 		this.description = description;
 	}
 
@@ -22,8 +27,10 @@ public enum NetworkProtocol {
 	
 	public static void main(String[] args) {
 		
-		NetworkProtocol temp = NetworkProtocol.TCP;
-		System.out.println( temp.name() );
+		NetProtocolEnum temp = NetProtocolEnum.TCP;
+		
+		System.out.println( temp ); //Transmission Control Protocol
+		System.out.println( temp.name() ); //TCP
 	}
 }
 

@@ -8,7 +8,7 @@ import java.util.regex.*;
 
 
 
-public class test {
+public class eumuSwitch {
 	
 	public static enum Fruit {
 	    apple, carrot, mango, orange;
@@ -24,8 +24,9 @@ public class test {
 	      throw new NullPointerException("null is not a valid plugin");
 	  }*/
 	  
+	  System.out.println( WoodEnum.INDIAN_ROSEWOOD );
 	  
-	  System.out.println( Wood.INDIAN_ROSEWOOD );
+	  
 	  
 	  /** 
 	   * Turn the Set into List
@@ -56,10 +57,6 @@ public class test {
 		        break;
 		    // etc...
 		}
-	  
-	  
-	  
-	  
 	  
 	}
 }
